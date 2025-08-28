@@ -7,12 +7,11 @@ public class Kilowatts {
         double qtdKilowatt = teclado.nextDouble();
         System.out.println("Informe o valor do kilowatt: ");
         double valKilowatt = teclado.nextDouble();
+        double valorPago = qtdKilowatt*valKilowatt;
 
-        if (qtdKilowatt < 150) {
-            System.out.println("Valor a ser pago: " + (qtdKilowatt * valKilowatt * 0.90));
+        if (qtdKilowatt < 150.0) {
+            valorPago = valorPago * 0.9;
         }
-        else{
-            System.out.println("Valor a ser pago: " + (qtdKilowatt*valKilowatt));
-        }
+        System.out.println("Valor a ser pago: " + valorPago);
     }
 }
