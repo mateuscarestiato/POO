@@ -9,9 +9,9 @@ public class Circulo {
         Scanner teclado = new Scanner(System.in);
 
         System.out.println("Informe o raio do circulo: ");
-        float raio = teclado.nextFloat();
-
-        System.out.println("O perimetro do circulo é igual a " + (2*3.14*raio));
-        System.out.println("A area do circulo é igual a " + (3.14*raio*(Math.pow(raio,2))));
+        double raio = teclado.nextDouble();
+        final float PI =3.14f;
+        System.out.println("O perimetro do circulo é igual a " + (2*Math.PI*raio));
+        System.out.println("A area do circulo é igual a " + (Math.PI*raio*(Math.pow(raio,2))));
     }
 }
